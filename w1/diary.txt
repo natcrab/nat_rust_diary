@@ -2,3 +2,6 @@ Mon: This is the first time I have used Rust in two months, and while rereading 
 Pokemon showdown actually is open source and has an API, so writing an extension of it might interest me in the future.
 
 Tue: I decided to do something more "algorithmic" in a sense, and Vigenere cypher was the first thing that came to mind (still waiting for the next LEMMINO video). The issue with whitespaces when reading from stdin and edge cases with non-alphabetic ascii characters took a bit to figure out. I will probably come back to this later to attempt and make a version that works with UTF-8 somehow?
+
+Wed-Thu: I made a (pretty harmless honestly) zipbomb that uses a zip file that unzips into itself. The zip file was named r.zip and I genuinely forgot from which website I found it from, but it is certainly a very interesting concept. I just used hexdump to take the hexadecimal values from the zip file and manually copy it into the program. This is a pretty bad zipbomb because window antivirus would detect it immediately, but it is fun as a concept I supposed. It also isn't very fast.
+Also, Silksong release day :D
