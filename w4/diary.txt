@@ -1,3 +1,5 @@
 I have not done anything for this in 3 weeks because I was too busy playing Silksong and solving the most random issues to a new univeristy year. Hopefully I would be more consistent from now on.
 
 Tue: I have had the idea of making a multiplayer Conway game of life for awhile. I think the first step is to try a GUI library so I can actually visualize if my Conway simulation is working. Moreover, all my Rust have been done purely via ASCII with the command line, so this is just overall a good aspect to learn. Well, at least that was the initial plan before I find a really cool book that seems to match exactly what we are doing for the next university semester (but in C instead) so I guess I will be doing both depending on my mood for the next few weeks.
+
+Wed: This book i am learning from (Rust Atomics and Locks by Mara Bos) is genuinely incredible. Every single line I wnat to note something down just because of how much im learning about the quirks of every function of the standard library or the all-mighty compiler itself. It's such a shame the book is so short
