@@ -1,0 +1,460 @@
+# //  Questa Sim-64
+# //  Version 10.6g linux_x86_64 Aug  2 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# reading modelsim.ini
+# Loading project testrun
+vlog en_decoder.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:40:40 on Sep 26,2025
+# vlog -reportprogress 300 en_decoder.v 
+# -- Compiling module encoder
+# ** Error: (vlog-13069) en_decoder.v(32): near "b0010010110000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(33): near "b0001100110000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(34): near "b0101011010000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(35): near "b0010101010000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(36): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(37): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(38): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(39): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(40): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(41): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(42): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(43): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(44): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(45): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(46): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(47): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(48): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(49): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(50): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(51): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# -- Compiling module decoder
+# ** Error: (vlog-13069) en_decoder.v(120): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(121): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(122): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(123): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(125): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(126): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(127): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(128): near "b101001010100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(129): near "b100110010100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(130): near "b011010010100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(131): near "b100101100100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(132): near "b011001100100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(133): near "b010110100100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(134): near "b100101011000001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(135): near "b011001011000001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(136): near "b010110011000001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(137): near "b010101101000001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(138): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(139): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(140): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# -- Compiling module encoder_decoder_tb
+# End time: 00:40:40 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 40, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog en_decoder.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:43:44 on Sep 26,2025
+# vlog -reportprogress 300 en_decoder.v 
+# -- Compiling module encoder
+# ** Error: (vlog-13069) en_decoder.v(32): near "b0010010110000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(33): near "b0001100110000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(34): near "b0101011010000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(35): near "b0010101010000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(36): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(37): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(38): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(39): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(40): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(41): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(42): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(43): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(44): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(45): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(46): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(47): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(48): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(49): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(50): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(51): near "b0000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# -- Compiling module decoder
+# ** Error: (vlog-13069) en_decoder.v(120): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(121): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(122): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(123): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(125): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(126): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(127): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(128): near "b101001010100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(129): near "b100110010100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(130): near "b011010010100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(131): near "b100101100100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(132): near "b011001100100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(133): near "b010110100100001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(134): near "b100101011000001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(135): near "b011001011000001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(136): near "b010110011000001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(137): near "b010101101000001": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(138): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(139): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(140): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# -- Compiling module encoder_decoder_tb
+# End time: 00:43:44 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 40, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog en_decoder.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:45:52 on Sep 26,2025
+# vlog -reportprogress 300 en_decoder.v 
+# -- Compiling module encoder
+# -- Compiling module decoder
+# ** Error: (vlog-13069) en_decoder.v(120): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(121): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(122): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(123): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(124): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(125): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(126): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# -- Compiling module encoder_decoder_tb
+# End time: 00:45:52 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog en_decoder.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:45:58 on Sep 26,2025
+# vlog -reportprogress 300 en_decoder.v 
+# -- Compiling module encoder
+# -- Compiling module decoder
+# ** Error: (vlog-13069) en_decoder.v(120): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(121): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(122): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(123): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(124): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(125): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(126): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# -- Compiling module encoder_decoder_tb
+# End time: 00:45:58 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog -reportprogress 300 en_decoder.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:46:07 on Sep 26,2025
+# vlog -reportprogress 300 en_decoder.v 
+# -- Compiling module encoder
+# -- Compiling module decoder
+# ** Error: (vlog-13069) en_decoder.v(120): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(121): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(122): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(123): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(124): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(125): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(126): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# -- Compiling module encoder_decoder_tb
+# End time: 00:46:07 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog -reportprogress 300 en_decoder.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:46:10 on Sep 26,2025
+# vlog -reportprogress 300 en_decoder.v 
+# -- Compiling module encoder
+# -- Compiling module decoder
+# ** Error: (vlog-13069) en_decoder.v(120): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(121): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(122): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(123): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(124): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(125): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# ** Error: (vlog-13069) en_decoder.v(126): near "b000000000000000": syntax error, unexpected IDENTIFIER, expecting '('.
+# -- Compiling module encoder_decoder_tb
+# End time: 00:46:10 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog -reportprogress 300 en_decoder.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:46:35 on Sep 26,2025
+# vlog -reportprogress 300 en_decoder.v 
+# -- Compiling module encoder
+# -- Compiling module decoder
+# -- Compiling module encoder_decoder_tb
+# 
+# Top level modules:
+# 	encoder_decoder_tb
+# End time: 00:46:35 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog display.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:46:45 on Sep 26,2025
+# vlog -reportprogress 300 display.v 
+# -- Compiling module seven_segement_dec
+# -- Compiling module seven_segement_dec_tb
+# 
+# Top level modules:
+# 	seven_segement_dec
+# 	seven_segement_dec_tb
+# End time: 00:46:45 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog prime.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:46:49 on Sep 26,2025
+# vlog -reportprogress 300 prime.v 
+# -- Compiling module prime
+# ** Error: (vlog-13038) prime.v(6): near "7": Missing port in ansi port list.
+# End time: 00:46:49 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog prime.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:47:02 on Sep 26,2025
+# vlog -reportprogress 300 prime.v 
+# -- Compiling module prime
+# -- Compiling module prime_tb
+# ** Error: (vlog-13069) prime.v(42): near "48": syntax error, unexpected INTEGER NUMBER.
+# End time: 00:47:02 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog prime.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:47:04 on Sep 26,2025
+# vlog -reportprogress 300 prime.v 
+# -- Compiling module prime
+# -- Compiling module prime_tb
+# ** Error: (vlog-13069) prime.v(42): near "48": syntax error, unexpected INTEGER NUMBER.
+# End time: 00:47:04 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog prime.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 00:47:16 on Sep 26,2025
+# vlog -reportprogress 300 prime.v 
+# -- Compiling module prime
+# -- Compiling module prime_tb
+# 
+# Top level modules:
+# 	prime_tb
+# End time: 00:47:16 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:17:58 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# ** Error: (vlog-13038) combinational.v(23): near ")": Missing port in ansi port list.
+# End time: 01:17:58 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:18:25 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# ** Error: (vlog-13038) combinational.v(23): near ")": Missing port in ansi port list.
+# End time: 01:18:25 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:18:49 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# ** Error: (vlog-13038) combinational.v(23): near ")": Missing port in ansi port list.
+# End time: 01:18:49 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:20:02 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	mux_1bit
+# 	demux_1bit
+# 	half_adder
+# End time: 01:20:02 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:26:14 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# ** Error: (vlog-13069) combinational.v(51): near "xor_2": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: (vlog-13069) combinational.v(55): near "EOF": syntax error, unexpected end of source code.
+# End time: 01:26:14 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:26:38 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	mux_1bit
+# 	demux_1bit
+# 	half_adder
+# 	full_adder
+# End time: 01:26:38 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:48:29 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# -- Compiling module full_adder_subtractor
+# ** Error: (vlog-13069) combinational.v(63): near "output": syntax error, unexpected output, expecting ')'.
+# End time: 01:48:29 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:48:44 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# -- Compiling module full_adder_subtractor
+# ** Error: (vlog-13069) combinational.v(78): near "4": syntax error, unexpected INTEGER NUMBER.
+# End time: 01:48:44 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:49:09 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# -- Compiling module full_adder_subtractor
+# ** Error: (vlog-13069) combinational.v(78): near "4": syntax error, unexpected INTEGER NUMBER.
+# End time: 01:49:09 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:49:37 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# -- Compiling module full_adder_subtractor
+# -- Compiling module fas_4
+# ** Error: (vlog-13069) combinational.v(85): near "wire": syntax error, unexpected wire, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# End time: 01:49:38 on Sep 26,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:49:38 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# -- Compiling module full_adder_subtractor
+# -- Compiling module fas_4
+# ** Error: (vlog-13069) combinational.v(85): near "wire": syntax error, unexpected wire, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# End time: 01:49:38 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 01:49:53 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# -- Compiling module full_adder_subtractor
+# -- Compiling module fas_4
+# 
+# Top level modules:
+# 	mux_1bit
+# 	demux_1bit
+# 	half_adder
+# 	full_adder
+# 	fas_4
+# End time: 01:49:53 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 02:17:45 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# -- Compiling module full_adder_subtractor
+# -- Compiling module fas_4
+# -- Compiling module fas_lookahead
+# ** Error: (vlog-13069) combinational.v(98): near "output": syntax error, unexpected output, expecting ')'.
+# End time: 02:17:45 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 02:18:15 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# -- Compiling module full_adder_subtractor
+# -- Compiling module fas_4
+# -- Compiling module fas_lookahead
+# -- Compiling module bcd_adder_4
+# ** Error: combinational.v(131): 'b_adder1' already declared in this scope.
+# End time: 02:18:15 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/nat/questa/questasim/linux_x86_64/vlog failed.
+vlog combinational.v
+# QuestaSim-64 vlog 10.6g Compiler 2019.08 Aug  2 2019
+# Start time: 02:18:29 on Sep 26,2025
+# vlog -reportprogress 300 combinational.v 
+# -- Compiling module mux_1bit
+# -- Compiling module demux_1bit
+# -- Compiling module half_adder
+# -- Compiling module full_adder
+# -- Compiling module full_adder_subtractor
+# -- Compiling module fas_4
+# -- Compiling module fas_lookahead
+# -- Compiling module bcd_adder_4
+# 
+# Top level modules:
+# 	mux_1bit
+# 	demux_1bit
+# 	half_adder
+# 	full_adder
+# 	fas_lookahead
+# 	bcd_adder_4
+# End time: 02:18:29 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
