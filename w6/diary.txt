@@ -1,1 +1,3 @@
 Tue 8/10: I was sick the previous week (and had to do a lot of catchup) so I wanted to do two chapters today from the book. As usual, this book is insanely eyeopening for multithreads programming (I barely did any multithreading before Rust). Hopefully I will learn when and when not to use thread soon because all this seems incredibly useful
+
+Wed 9/10: Another chapter from the book. Honestly I think I will finish this book before writing my own stuff to be ready for the course next quarter. 
