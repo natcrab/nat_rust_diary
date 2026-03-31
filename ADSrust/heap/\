@@ -1,0 +1,33 @@
+fn main() {}
+mod heap {
+    pub struct Heap<T>(Vec<T>, usize);
+
+    impl<T: PartialOrd> Heap<T> {
+        pub fn new() -> Self {
+            let vec: Vec<T> = Vec::new();
+            Heap(vec, 0)
+        }
+
+        pub fn enqueue(mut self: Self, item: T) {
+            self.0.push(item);
+            self.1 += 1;
+            let y = self.1.clone();
+            self.check_swap(self.1.clone());
+        }
+
+        fn findparent(index: usize) -> usize {
+            (index - 1) / 2
+        }
+
+        fn check_swap(mut self: Self, index: usize) {
+            if index == 0 {
+                return;
+            }
+            let parent = Self::findparent(index);
+            if self.0.get(index).unwrap() > self.0.get(parent).unwrap() {
+                self.0.swap(index, parent);
+                self.check_swap(parent);
+            }
+        }
+    }
+}
