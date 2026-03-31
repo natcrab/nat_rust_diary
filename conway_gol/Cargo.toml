@@ -1,0 +1,17 @@
+[package]
+name = "conway"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "helper"
+path = "src/lib.rs"
+
+[dependencies]
+wasm-bindgen = {version = "0.2"}
+regex = "1.11.1"
+rand = "0.8"
+slint = "1.12.1"
+
+[build-dependencies]
+slint-build = "1.12.1"

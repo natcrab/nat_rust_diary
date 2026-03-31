@@ -1,0 +1,31 @@
+struct Tile{
+	//icon: image,
+	alive: bool,
+}
+component Box inherits Rectangle {
+    callback clicked;
+    in property <bool> alive;
+    background: alive ? #7CFC00 : #000000;
+
+    TouchArea {
+        clicked => {
+            root.clicked();
+        }
+    }
+}
+
+export component MainWindow inherits Window {
+    full-screen: true;
+    preferred-width: 100%;
+    preferred-height: 100%;
+    in property <int> r;
+    in property <int> c;
+    in property <[Tile]> boxes;
+    for box[i] in boxes: Box {
+        x: mod(i, c) * ((98 / c) * 1%) * 1px;
+        y: floor(i / r) * ((98 / c) * 1%) * 1px;
+        width: 90% / c * 1px;
+        height: 90% / r * 1px;
+        alive: box.alive;
+    }
+}

@@ -1,0 +1,216 @@
+use regex::Regex;
+use std::collections::HashSet;
+use std::error::Error;
+use std::fmt::Display;
+use std::sync::atomic::{AtomicI32, Ordering::Relaxed};
+use std::sync::{Arc, Mutex};
+use std::thread;
+use std::{fmt, process};
+static NUM_THREADS: i32 = 30;
+#[derive(Debug)]
+struct ParseError;
+
+impl Error for ParseError {}
+
+impl Display for ParseError {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(
+            f,
+            "Numbers provided were not unsigned integers in range of the board size"
+        )
+    }
+}
+
+#[derive(Debug)]
+struct IncompleteCoordinates;
+
+impl Error for IncompleteCoordinates {}
+
+impl Display for IncompleteCoordinates {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(
+            f,
+            "Please provide complete coordinates (the number of inputs should be a multiple of 2)"
+        )
+    }
+}
+
+#[derive(Debug)]
+pub struct Conway {
+    board: Vec<bool>,
+    row: i32,
+    col: i32,
+}
+
+#[derive(Debug)]
+pub struct Coordinates {
+    row: i32,
+    col: i32,
+}
+
+impl Conway {
+    fn track_duplicates(&self, set: &mut HashSet<Vec<bool>>) -> bool {
+        if set.contains(&self.board) {
+            return true;
+        }
+        set.insert(self.board.clone());
+        false
+    }
+
+    fn new(c: Coordinates) -> Self {
+        //let vec: Vec<bool> = Vec::with_capacity((c.row * c.col) as usize); //This does
+        //not set the length
+        let vec: Vec<bool> = vec![false; (c.row * c.col) as usize];
+        Self {
+            board: vec,
+            row: c.row,
+            col: c.col,
+        }
+    }
+
+    fn make_alive(&mut self, vec: Vec<Coordinates>) {
+        for c in vec {
+            self.board[(c.row * self.col + c.col) as usize] = true;
+        }
+    }
+
+    fn parse_pair(arg1: &str, arg2: &str) -> Coordinates {
+        let row: i32 = arg1.parse::<i32>().unwrap();
+        let col: i32 = arg2.parse::<i32>().unwrap();
+        Coordinates { row, col }
+    }
+
+    fn parse(&self, s: String) -> Result<Vec<Coordinates>, Box<dyn Error>> {
+        let mut handles = Vec::new();
+        let row_max = self.row;
+        let col_max = self.col;
+        let re = Regex::new(r"\d").unwrap();
+        let vec_safe = Arc::new(Mutex::new(Vec::new()));
+        let mut matches = re.captures_iter(&s);
+        loop {
+            let val1 = match matches.next() {
+                None => {
+                    break;
+                }
+                Some(x) => x.extract::<0>().0.to_string(), //make String owned to avoid
+                                                           //captures_iter reference to a String not living long enough
+            };
+            let val2 = match matches.next() {
+                None => {
+                    return Err(Box::new(IncompleteCoordinates));
+                }
+                Some(x) => x.extract::<0>().0.to_string(),
+            };
+            let v = vec_safe.clone();
+            let t = thread::spawn(move || {
+                let xy = Conway::parse_pair(&val1, &val2);
+                if xy.row > row_max || xy.row < 0 || xy.col > col_max || xy.col < 0 {
+                    panic!("Not in range");
+                }
+                let mut guard = v.lock().unwrap();
+                (*guard).push(xy);
+                drop(guard); //probably not necessary
+            });
+            handles.push(t);
+        }
+        for h in handles {
+            if h.join().is_err() {
+                return Err(Box::new(ParseError));
+            }
+        }
+
+        Ok(Arc::try_unwrap(vec_safe)
+            .expect("No error here")
+            .into_inner()
+            .expect("No error should be here either"))
+    }
+
+    fn make_one_alive(&mut self, co: &str) -> Result<bool, Box<dyn Error>> {
+        let coordinates = self.parse(co.to_string())?;
+        let index = coordinates[0].row * self.col + coordinates[0].col;
+        if self.board[index as usize] == false {
+            return Ok(false);
+        }
+        self.board[index as usize] = true;
+        Ok(true)
+    }
+
+    fn next_state(&mut self) -> i32 {
+        let row = self.row;
+        let col = self.col;
+        let max = row * col;
+        let reader = Arc::new(self.board.clone());
+        let arc = Arc::new(Mutex::new(self));
+        let curr_cell = &AtomicI32::new(0);
+        let changed = &AtomicI32::new(0);
+        thread::scope(|s| {
+            for _ in 0..NUM_THREADS {
+                let arc = arc.clone();
+                let reader = reader.clone();
+                s.spawn(move || {
+                    loop {
+                        let cell = curr_cell.fetch_add(1, Relaxed);
+                        if cell >= max {
+                            break;
+                        }
+                        let tiles: Vec<Tile> = Vec::new();
+                        let num = Conway::find_neighbours(cell, &reader, row, col);
+                        if !(2..=3).contains(&num) && reader[cell as usize] {
+                            let mut guard = arc.lock().unwrap();
+                            guard.board[cell as usize] = false; //autoderef
+                            changed.fetch_sub(1, Relaxed);
+                        } else if num == 3 && !reader[cell as usize] {
+                            let mut guard = arc.lock().unwrap();
+                            guard.board[cell as usize] = true;
+                            changed.fetch_add(1, Relaxed);
+                        }
+                    }
+                });
+            }
+        });
+        std::cmp::max(0, changed.load(Relaxed))
+    }
+
+    fn print_board(&self) {
+        print!("{:#?}", self.board);
+    }
+
+    fn find_neighbours(cell: i32, reader: &[bool], row_max: i32, col_max: i32) -> i32 {
+        let mut counter = 0;
+        let row: i32 = cell / col_max;
+        let col: i32 = cell % col_max;
+        for c in -1..=1 {
+            let curr_col = col + c;
+            if curr_col < 0 || curr_col >= col_max {
+                continue;
+            }
+            for r in -1..=1 {
+                let curr_row = row + r;
+                if curr_row < 0 || curr_row >= row_max {
+                    continue;
+                }
+                if c == 0 && r == 0 {
+                    continue;
+                }
+                let index = (curr_row * col_max + curr_col) as usize;
+                if reader[index] {
+                    counter += 1;
+                }
+            }
+        }
+        counter
+    }
+}
+
+fn main() {
+    let mut board = Conway::new(Conway::parse_pair("10", "10"));
+    board.make_alive(board.parse("0 0 0 1 1 2 1 3 2 0 2 1".to_string()).unwrap());
+    let mut set: HashSet<Vec<bool>> = HashSet::new();
+    for _ in 0..10 {
+        if board.track_duplicates(&mut set) {
+            break;
+        }
+        board.next_state();
+        board.print_board();
+    }
+}
